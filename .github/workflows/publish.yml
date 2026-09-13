@@ -7,9 +7,19 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "publish-pages"
+  cancel-in-progress: false
 
 jobs:
   publish:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
 
     steps:
@@ -49,15 +59,31 @@ jobs:
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
         run: |
-          COUNT=$(node -e "const p=require('./published.json'); console.log(p.length)")
-          if [ "$COUNT" -gt "0" ]; then
-            TITLES=$(node -e "const p=require('./published.json'); console.log(p.map(x=>x.title).join(', '))")
-            curl -sS https://api.resend.com/emails \
-              -H "Authorization: Bearer $RESEND_API_KEY" \
-              -H "Content-Type: application/json" \
-              -d "$(jq -n \
-                --arg from "$FROM_EMAIL" \
-                --arg to "$NOTIFY_EMAIL" \
-                --arg titles "$TITLES" \
-                '{from:$from,to:[$to],subject:"Campus Bulk Lab: new post published",html:("<p>Your website automatically published:</p><p><strong>"+$titles+"</strong></p><p>The site has been updated automatically.</p>")}')"
+          if [ -n "$RESEND_API_KEY" ] && [ -n "$NOTIFY_EMAIL" ] && [ -n "$FROM_EMAIL" ]; then
+            COUNT=$(node -e "const p=require('./published.json'); console.log(p.length)")
+            if [ "$COUNT" -gt "0" ]; then
+              TITLES=$(node -e "const p=require('./published.json'); console.log(p.map(x=>x.title).join(', '))")
+              curl -sS https://api.resend.com/emails \
+                -H "Authorization: Bearer $RESEND_API_KEY" \
+                -H "Content-Type: application/json" \
+                -d "$(jq -n \
+                  --arg from "$FROM_EMAIL" \
+                  --arg to "$NOTIFY_EMAIL" \
+                  --arg titles "$TITLES" \
+                  '{from:$from,to:[$to],subject:"Campus Bulk Lab: new post published",html:("<p>Your website automatically published:</p><p><strong>"+$titles+"</strong></p><p>The site has been updated automatically.</p>")}')"
+            fi
+          else
+            echo "Email secrets not configured yet. Skipping email."
           fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
