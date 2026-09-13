@@ -1,0 +1,63 @@
+name: Auto publish queued posts
+
+on:
+  schedule:
+    - cron: "15 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Publish due posts and refill queue
+        run: node scripts/publish.js
+
+      - name: Check whether anything changed
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "Campus Bulk Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add .
+          git commit -m "Auto-publish/refill content queue"
+          git push
+
+      - name: Email publication notice
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+        run: |
+          COUNT=$(node -e "const p=require('./published.json'); console.log(p.length)")
+          if [ "$COUNT" -gt "0" ]; then
+            TITLES=$(node -e "const p=require('./published.json'); console.log(p.map(x=>x.title).join(', '))")
+            curl -sS https://api.resend.com/emails \
+              -H "Authorization: Bearer $RESEND_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d "$(jq -n \
+                --arg from "$FROM_EMAIL" \
+                --arg to "$NOTIFY_EMAIL" \
+                --arg titles "$TITLES" \
+                '{from:$from,to:[$to],subject:"Campus Bulk Lab: new post published",html:("<p>Your website automatically published:</p><p><strong>"+$titles+"</strong></p><p>The site has been updated automatically.</p>")}')"
+          fi
