@@ -24,6 +24,14 @@ const escapeHtml = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&l
 for (const p of due) {
   const html = `<!doctype html>
 <html lang="en"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VP86LE3H3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9VP86LE3H3');
+</script>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${escapeHtml(p.title)} | Campus Bulk Lab</title>
 <meta name="description" content="${escapeHtml(p.description)}">
