@@ -42,8 +42,9 @@ for (const p of due) {
 <p class="tag">${escapeHtml(p.category)}</p>
 <h1>${escapeHtml(p.title)}</h1>
 <p class="meta">Published ${p.publish_on}</p>
+<div class="notice"><strong>Affiliate disclosure:</strong> As an Amazon Associate I earn from qualifying purchases.</div>
 ${p.body_html}
-<div class="notice"><strong>Affiliate disclosure:</strong> This article may eventually contain affiliate links. If one is added, the site may earn a commission at no extra cost to the reader.</div>
+
 </main>
 <footer><div class="wrap"><p>© Campus Bulk Lab</p></div></footer>
 </body></html>`;
