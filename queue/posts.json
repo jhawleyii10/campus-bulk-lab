@@ -1,13 +1,5 @@
 [
   {
-    "slug": "best-cheap-gym-bag-items",
-    "title": "7 Cheap Gym Bag Essentials for College Students",
-    "description": "Simple gym bag basics that are useful without wasting money.",
-    "category": "Gear",
-    "body_html": "<p>You do not need a huge list of gear to train consistently. Start with a water bottle, lifting shoes you already own, a small towel if your gym requires one, a lock, headphones, a basic notebook or phone log, and a snack for after training.</p><h2>Buy less, use it more</h2><p>Most beginners are better off buying fewer things and using them consistently instead of collecting expensive accessories.</p>",
-    "publish_on": "2026-09-12"
-  },
-  {
     "slug": "cheap-high-protein-breakfasts",
     "title": "5 Cheap High-Protein Breakfasts for Busy Students",
     "description": "Fast breakfast ideas that are easier to fit around early classes.",
@@ -22,5 +14,85 @@
     "category": "Training",
     "body_html": "<p>A simple three-day routine can work well for students because it leaves room for classes, studying, and recovery.</p><h2>Example structure</h2><p>Day 1: squat pattern, horizontal push, row, arms. Day 2: hinge pattern, vertical push, pulldown, core. Day 3: leg press or squat variation, bench variation, row variation, shoulders and arms.</p><p>Choose loads you can control, learn technique, and progress gradually.</p>",
     "publish_on": "2026-09-18"
+  },
+  {
+    "slug": "cheap-protein-snacks",
+    "title": "10 Cheap High-Protein Snacks for College Students",
+    "description": "Affordable snack ideas that are easy to keep in a dorm or backpack.",
+    "category": "Nutrition",
+    "body_html": "<p>Protein snacks do not have to be expensive. Good student-friendly options include Greek yogurt, milk, cottage cheese, tuna packets, string cheese, hard-boiled eggs, peanut butter, roasted edamame, jerky bought on sale, and simple protein shakes.</p><h2>Make convenience work for you</h2><p>Keep two or three easy options where you study so missing a meal does not turn into missing protein for the whole day.</p>",
+    "publish_on": "2026-09-21"
+  },
+  {
+    "slug": "easy-calorie-boosters",
+    "title": "8 Easy Ways to Add Calories Without Huge Meals",
+    "description": "Simple ways to make meals more calorie-dense without eating enormous portions.",
+    "category": "Nutrition",
+    "body_html": "<p>If gaining weight is difficult, increasing meal size is not the only option. Adding milk, cheese, peanut butter, olive oil, granola, avocado, sauces, or an extra serving of rice can raise calories without making the meal feel dramatically larger.</p><h2>Small additions add up</h2><p>Pick one or two calorie boosters per meal instead of trying to force down one giant plate.</p>",
+    "publish_on": "2026-09-24"
+  },
+  {
+    "slug": "progressive-overload-basics",
+    "title": "Progressive Overload Explained for Beginners",
+    "description": "A beginner-friendly explanation of how gradual progression works in the gym.",
+    "category": "Training",
+    "body_html": "<p>Progressive overload means gradually asking your body to do a little more over time. That can mean adding weight, adding reps, improving technique, or completing the same work with better control.</p><h2>Track something</h2><p>A simple notes app is enough. Record the exercise, weight, reps, and how the set felt so you know what to beat next time.</p>",
+    "publish_on": "2026-09-27"
+  },
+  {
+    "slug": "best-rep-ranges",
+    "title": "What Rep Range Should a Beginner Use?",
+    "description": "A practical guide to choosing rep ranges for beginner strength training.",
+    "category": "Training",
+    "body_html": "<p>Beginners do not need one perfect rep range. Moderate sets that let you practice technique while still working hard are often useful. Different exercises also feel better in different ranges.</p><h2>Use control first</h2><p>Choose a range that lets you keep good form and make steady progress instead of chasing numbers.</p>",
+    "publish_on": "2026-09-30"
+  },
+  {
+    "slug": "sleep-muscle-growth",
+    "title": "Why Sleep Matters for Muscle Growth",
+    "description": "Why consistent sleep supports training, recovery, and appetite.",
+    "category": "Recovery",
+    "body_html": "<p>Training is only one part of progress. Sleep supports recovery, performance, attention, and normal appetite regulation.</p><h2>Make it realistic</h2><p>A consistent bedtime, less late-night scrolling, and preparing for the next morning can make sleep easier during a busy semester.</p>",
+    "publish_on": "2026-10-03"
+  },
+  {
+    "slug": "rest-day-ideas",
+    "title": "What to Do on a Rest Day",
+    "description": "Simple recovery-day ideas that do not require sitting still all day.",
+    "category": "Recovery",
+    "body_html": "<p>A rest day can still include normal movement. Walking, light mobility, easy recreation, and meal prep can all fit while giving hard training a break.</p><h2>Do not turn recovery into another workout</h2><p>The point is to arrive at your next session ready to train well.</p>",
+    "publish_on": "2026-10-06"
+  },
+  {
+    "slug": "protein-at-breakfast",
+    "title": "How to Get More Protein at a Dining Hall Breakfast",
+    "description": "Simple breakfast choices for students who want more protein.",
+    "category": "Dining Hall",
+    "body_html": "<p>Start with the obvious protein foods first: eggs, Greek yogurt, milk, cottage cheese, or breakfast meat when available. Then add carbs such as oats, fruit, toast, potatoes, or pancakes depending on your needs.</p><h2>Build the plate in order</h2><p>Protein first, then carbs, then extras. That makes it harder to accidentally build a breakfast that is mostly quick carbs.</p>",
+    "publish_on": "2026-10-09"
+  },
+  {
+    "slug": "high-calorie-dining-hall",
+    "title": "How to Eat More Calories at the Dining Hall",
+    "description": "Easy ways to increase calories using foods already available at a campus dining hall.",
+    "category": "Dining Hall",
+    "body_html": "<p>If you struggle to gain weight, use foods that are already available. Add milk, cheese, peanut butter, sauces, rice, pasta, bread, or a second entrée when it fits.</p><h2>Use repeatable combinations</h2><p>Finding two or three reliable meal combinations is easier than reinventing every plate.</p>",
+    "publish_on": "2026-10-12"
+  },
+  {
+    "slug": "cheap-lifting-straps",
+    "title": "Do Beginners Need Lifting Straps?",
+    "description": "A simple look at when lifting straps may or may not be useful.",
+    "category": "Gear",
+    "body_html": "<p>Most beginners do not need a large bag of lifting accessories. Straps can be useful when grip limits certain pulling exercises, but they are not required for basic progress.</p><h2>Buy gear for a problem you actually have</h2><p>Wait until an accessory solves a clear training problem instead of buying it because everyone else has one.</p>",
+    "publish_on": "2026-10-15"
+  },
+  {
+    "slug": "shaker-bottle-guide",
+    "title": "What to Look for in a Cheap Shaker Bottle",
+    "description": "Simple features that matter when buying an inexpensive shaker bottle.",
+    "category": "Gear",
+    "body_html": "<p>A shaker bottle does not need to be fancy. Look for a lid that seals well, a shape that is easy to clean, measurement markings, and a size that fits your backpack.</p><h2>Easy to clean beats trendy</h2><p>If you hate washing it, you probably will not use it consistently.</p>",
+    "publish_on": "2026-10-18"
   }
 ]
