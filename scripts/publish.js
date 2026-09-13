@@ -81,3 +81,25 @@ fs.writeFileSync(path.join(root, 'queue_status.json'), JSON.stringify({
 console.log(`PUBLISHED ${due.length}`);
 console.log(`QUEUE ${queue.length}`);
 console.log(`RESERVE ${reserve.length}`);
+const sitemapPath = path.join(root, 'sitemap.xml');
+const baseUrl = 'https://jhawleyii10.github.io/campus-bulk-lab';
+
+const postFiles = fs.readdirSync(postsDir)
+  .filter(file => file.endsWith('.html'))
+  .sort();
+
+const sitemapUrls = [
+  `${baseUrl}/`,
+  ...postFiles.map(file => `${baseUrl}/posts/${file}`)
+];
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapUrls.map(url => `  <url>
+    <loc>${url}</loc>
+  </url>`).join('\n')}
+</urlset>
+`;
+
+fs.writeFileSync(sitemapPath, sitemap, 'utf8');
+console.log(`Updated sitemap with ${sitemapUrls.length} URLs.`);
