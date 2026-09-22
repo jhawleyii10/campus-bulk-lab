@@ -35,6 +35,12 @@ for (const p of due) {
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${escapeHtml(p.title)} | Campus Bulk Lab</title>
 <meta name="description" content="${escapeHtml(p.description)}">
+<link rel="canonical" href="https://jhawleyii10.github.io/campus-bulk-lab/posts/${p.slug}.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${escapeHtml(p.title)}">
+<meta property="og:description" content="${escapeHtml(p.description)}">
+<meta property="og:url" content="https://jhawleyii10.github.io/campus-bulk-lab/posts/${p.slug}.html">
+<meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../assets/style.css"></head>
 <body>
 <header class="site-header"><div class="wrap nav"><a class="brand" href="../index.html">Campus Bulk Lab</a><nav><a href="../index.html#latest">Latest</a><a href="../index.html#about">About</a></nav></div></header>
@@ -44,6 +50,14 @@ for (const p of due) {
 <p class="meta">Published ${p.publish_on}</p>
 <div class="notice"><strong>Affiliate disclosure:</strong> As an Amazon Associate I earn from qualifying purchases.</div>
 ${p.body_html}
+<section class="related">
+  <h2>Keep Reading</h2>
+  <p>
+    <a href="../posts/cheap-bulking-foods.html">Cheap Bulking Foods for College Students</a> ·
+    <a href="../posts/creatine-beginner-guide.html">Creatine for College Students</a> ·
+    <a href="../posts/dining-hall-bulking.html">How to Bulk at the Dining Hall</a>
+  </p>
+</section>
 
 </main>
 <footer><div class="wrap"><p>© Campus Bulk Lab</p></div></footer>
