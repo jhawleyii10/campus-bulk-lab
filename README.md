@@ -1,4 +1,4 @@
-# Campus Bulk Lab — automated free starter site
+# BuiltBasix — automated free starter site
 
 ## Posting frequency
 
@@ -43,7 +43,7 @@ The included `pages.yml` workflow deploys the site after changes are pushed.
 ## First-night setup
 
 1. Create a free GitHub account.
-2. Create a repository such as `campus-bulk-lab`.
+2. Create a repository such as `builtbasix-site`.
 3. Upload the contents of this project, preserving folders.
 4. Enable GitHub Pages with GitHub Actions.
 5. Add the three Resend email secrets.

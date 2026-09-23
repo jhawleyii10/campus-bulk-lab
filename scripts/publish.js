@@ -33,18 +33,45 @@ for (const p of due) {
   gtag('config', 'G-9VP86LE3H3');
 </script>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${escapeHtml(p.title)} | Campus Bulk Lab</title>
+<title>${escapeHtml(p.title)} | BuiltBasix</title>
 <meta name="description" content="${escapeHtml(p.description)}">
-<link rel="canonical" href="https://jhawleyii10.github.io/campus-bulk-lab/posts/${p.slug}.html">
+<link rel="canonical" href="https://builtbasix.com/posts/${p.slug}.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="${escapeHtml(p.title)}">
 <meta property="og:description" content="${escapeHtml(p.description)}">
-<meta property="og:url" content="https://jhawleyii10.github.io/campus-bulk-lab/posts/${p.slug}.html">
+<meta property="og:url" content="https://builtbasix.com/posts/${p.slug}.html">
 <meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="../assets/style.css"></head>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/interactions.js" defer></script>
+</head>
 <body>
-<header class="site-header"><div class="wrap nav"><a class="brand" href="../index.html">Campus Bulk Lab</a><nav><a href="../index.html#latest">Latest</a><a href="../index.html#about">About</a></nav></div></header>
+<header class="bb-header">
+  <button class="menu-btn" type="button" id="menuOpen" aria-haspopup="true" aria-expanded="false" aria-controls="siteNav">MENU</button>
+  <a class="bb-brand" href="../index.html">
+    <span class="bb-name">BUILTBASIX</span>
+    <span class="bb-values">CHRIST &nbsp; DUNAMIS &nbsp; FAITH &nbsp; SERVE</span>
+  </a>
+  <nav class="bb-actions">
+    <a href="../index.html">HOME</a>
+  </nav>
+</header>
+
+<div class="nav-overlay" id="siteNav">
+  <span class="nav-overlay-brand">BUILTBASIX</span>
+  <button class="nav-overlay-close" type="button" id="menuClose">CLOSE</button>
+  <ul class="nav-overlay-list">
+    <li><a href="../shop.html">SHOP</a></li>
+    <li><a href="../train.html">TRAIN</a></li>
+    <li><a href="../fuel.html">FUEL</a></li>
+    <li><a href="../faith.html">FAITH</a></li>
+    <li><a href="../about.html">ABOUT</a></li>
+  </ul>
+  <span class="nav-overlay-scripture">MATTHEW 11:28</span>
+</div>
+
+<div class="bb-page" id="bbPage">
 <main class="wrap article">
+<div class="media-slot wide article-media"><img src="../assets/images/journal-wide.jpg" alt="A misty mountain range at sunrise" loading="eager" width="834" height="313"></div>
 <p class="tag">${escapeHtml(p.category)}</p>
 <h1>${escapeHtml(p.title)}</h1>
 <p class="meta">Published ${p.publish_on}</p>
@@ -60,7 +87,19 @@ ${p.body_html}
 </section>
 
 </main>
-<footer><div class="wrap"><p>© Campus Bulk Lab</p></div></footer>
+<footer><div class="wrap">
+  <div class="footer-links">
+    <a href="../index.html">Home</a>
+    <a href="../shop.html">Shop</a>
+    <a href="../train.html">Train</a>
+    <a href="../fuel.html">Fuel</a>
+    <a href="../faith.html">Faith</a>
+    <a href="../about.html">About</a>
+    <a href="mailto:hello@builtbasix.com">Contact</a>
+  </div>
+  <p>&copy; BuiltBasix | <a href="../privacy.html">Privacy Policy</a> | <a href="../affiliate-disclosure.html">Affiliate Disclosure</a></p>
+</div></footer>
+</div>
 </body></html>`;
   fs.writeFileSync(path.join(postsDir, `${p.slug}.html`), html);
 
@@ -105,14 +144,20 @@ console.log(`PUBLISHED ${due.length}`);
 console.log(`QUEUE ${queue.length}`);
 console.log(`RESERVE ${reserve.length}`);
 const sitemapPath = path.join(root, 'sitemap.xml');
-const baseUrl = 'https://jhawleyii10.github.io/campus-bulk-lab';
+const baseUrl = 'https://builtbasix.com';
 
 const postFiles = fs.readdirSync(postsDir)
   .filter(file => file.endsWith('.html'))
   .sort();
 
+// Dedicated static pages (SHOP / TRAIN / FUEL / FAITH / ABOUT). These are
+// hand-authored, not auto-generated, but the sitemap should still list
+// them. Additive only — does not touch queue/refill or publishing logic.
+const staticPages = ['shop.html', 'train.html', 'fuel.html', 'faith.html', 'about.html'];
+
 const sitemapUrls = [
   `${baseUrl}/`,
+  ...staticPages.map(page => `${baseUrl}/${page}`),
   ...postFiles.map(file => `${baseUrl}/posts/${file}`)
 ];
 

@@ -70,7 +70,7 @@ jobs:
                   --arg from "$FROM_EMAIL" \
                   --arg to "$NOTIFY_EMAIL" \
                   --arg titles "$TITLES" \
-                  '{from:$from,to:[$to],subject:"Campus Bulk Lab: new post published",html:("<p>Your website automatically published:</p><p><strong>"+$titles+"</strong></p><p>The site has been updated automatically.</p>")}')"
+                  '{from:$from,to:[$to],subject:"BuiltBasix: new post published",html:("<p>Your website automatically published:</p><p><strong>"+$titles+"</strong></p><p>The site has been updated automatically.</p>")}')"
             fi
           else
             echo "Email secrets not configured yet. Skipping email."
