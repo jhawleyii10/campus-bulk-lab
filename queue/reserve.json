@@ -1,54 +1,5 @@
 [
   {
-    "slug": "cheap-dorm-foods",
-    "title": "15 Cheap Foods to Keep in a Dorm",
-    "description": "Affordable shelf-stable and refrigerated foods that make eating easier in college.",
-    "category": "Nutrition",
-    "body_html": "<p>Useful dorm foods include oats, peanut butter, bagels, tuna packets, rice cups, beans, trail mix, cereal, milk, Greek yogurt, cheese sticks, fruit, tortillas, granola, and shelf-stable protein drinks.</p><h2>Build a backup meal</h2><p>Keep enough food around to make one quick meal when the dining hall is closed or your schedule runs late.</p>"
-  },
-  {
-    "slug": "protein-without-supplements",
-    "title": "How to Eat More Protein Without Protein Powder",
-    "description": "Whole-food options for students who do not want to rely on supplements.",
-    "category": "Nutrition",
-    "body_html": "<p>Protein powder is convenient, but it is not required. Eggs, milk, yogurt, meat, fish, beans, cheese, and soy foods can all contribute to daily protein.</p><h2>Use what you already eat</h2><p>It is usually easier to increase the protein in your normal meals than to completely change your diet.</p>"
-  },
-  {
-    "slug": "full-body-vs-split",
-    "title": "Full-Body vs. Split Routines for College Students",
-    "description": "How to think about choosing a training schedule around classes and recovery.",
-    "category": "Training",
-    "body_html": "<p>Both full-body routines and split routines can work. For students, the better choice is usually the one you can follow consistently around classes, work, and sleep.</p><h2>Consistency wins</h2><p>A simple routine completed for months is more useful than a complicated one you skip.</p>"
-  },
-  {
-    "slug": "gym-etiquette",
-    "title": "Basic Gym Etiquette Every Beginner Should Know",
-    "description": "Simple gym habits that make training smoother for everyone.",
-    "category": "Training",
-    "body_html": "<p>Re-rack weights, wipe down equipment when needed, avoid blocking walkways, share equipment politely, and do not sit on a machine for long stretches while scrolling.</p><h2>Be aware of the room</h2><p>Most gym etiquette is just being considerate of other people.</p>"
-  },
-  {
-    "slug": "warm-up-basics",
-    "title": "A Simple 5-Minute Warm-Up Before Lifting",
-    "description": "A short warm-up structure that is easy to repeat before training.",
-    "category": "Training",
-    "body_html": "<p>A warm-up does not need to take half an hour. Start with a few minutes of easy movement, then perform lighter versions of your first exercise before your working sets.</p><h2>Prepare for the workout</h2><p>The goal is to feel ready, not tired before the session begins.</p>"
-  },
-  {
-    "slug": "soreness-vs-progress",
-    "title": "Does Being Sore Mean You Had a Good Workout?",
-    "description": "Why soreness is not the only way to judge training quality.",
-    "category": "Recovery",
-    "body_html": "<p>Soreness can happen after hard or unfamiliar training, but it is not a score for workout quality. You can make progress without being extremely sore.</p><h2>Judge trends instead</h2><p>Look at strength, technique, consistency, and recovery across several weeks.</p>"
-  },
-  {
-    "slug": "grocery-budget-bulk",
-    "title": "How to Build a Cheap Weekly Bulking Grocery List",
-    "description": "A simple way to plan a student grocery list around protein, carbs, and calories.",
-    "category": "Budget",
-    "body_html": "<p>Start with a few proteins, a few cheap carbs, one or two fruits or vegetables, and a few calorie-dense extras. Buying repeatable basics often saves more money than chasing special fitness foods.</p><h2>Plan meals before shopping</h2><p>A short meal plan helps prevent buying random foods that do not fit together.</p>"
-  },
-  {
     "slug": "avoid-fitness-waste",
     "title": "5 Fitness Purchases College Students Can Usually Skip",
     "description": "Common fitness purchases that are often unnecessary for beginners.",
