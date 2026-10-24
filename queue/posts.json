@@ -1,13 +1,5 @@
 [
   {
-    "slug": "protein-without-supplements",
-    "title": "How to Eat More Protein Without Protein Powder",
-    "description": "Whole-food options for students who do not want to rely on supplements.",
-    "category": "Nutrition",
-    "body_html": "<p>Protein powder is convenient, but it is not required. Eggs, milk, yogurt, meat, fish, beans, cheese, and soy foods can all contribute to daily protein.</p><h2>Use what you already eat</h2><p>It is usually easier to increase the protein in your normal meals than to completely change your diet.</p>",
-    "publish_on": "2026-10-24"
-  },
-  {
     "slug": "full-body-vs-split",
     "title": "Full-Body vs. Split Routines for College Students",
     "description": "How to think about choosing a training schedule around classes and recovery.",
@@ -46,5 +38,61 @@
     "category": "Budget",
     "body_html": "<p>Start with a few proteins, a few cheap carbs, one or two fruits or vegetables, and a few calorie-dense extras. Buying repeatable basics often saves more money than chasing special fitness foods.</p><h2>Plan meals before shopping</h2><p>A short meal plan helps prevent buying random foods that do not fit together.</p>",
     "publish_on": "2026-11-08"
+  },
+  {
+    "slug": "avoid-fitness-waste",
+    "title": "5 Fitness Purchases College Students Can Usually Skip",
+    "description": "Common fitness purchases that are often unnecessary for beginners.",
+    "category": "Budget",
+    "body_html": "<p>Many beginners can skip expensive pre-workouts, giant supplement stacks, specialty gym gadgets, premium meal-prep containers, and trendy recovery tools.</p><h2>Spend on basics first</h2><p>Food, shoes that work for your training, and a consistent gym membership usually matter more.</p>",
+    "publish_on": "2026-11-11"
+  },
+  {
+    "slug": "pre-workout-foods",
+    "title": "Simple Pre-Workout Foods for College Students",
+    "description": "Easy meal and snack ideas before training.",
+    "category": "Nutrition",
+    "body_html": "<p>Before training, many people do well with foods that are easy to digest and provide carbohydrates, with some protein depending on timing. Examples include a banana and yogurt, a bagel with milk, cereal, oats, or rice with a lean protein.</p><h2>Test what feels good</h2><p>The best pre-workout meal is one that gives you energy without upsetting your stomach.</p>",
+    "publish_on": "2026-11-14"
+  },
+  {
+    "slug": "post-workout-meal",
+    "title": "What Should You Eat After a Workout?",
+    "description": "A simple approach to post-workout meals without complicated timing rules.",
+    "category": "Nutrition",
+    "body_html": "<p>You do not need a perfect post-workout meal the second you finish training. A normal meal with protein, carbohydrates, fluids, and enough total calories can work well.</p><h2>Think about the whole day</h2><p>Your overall intake matters more than obsessing over a tiny timing window.</p>",
+    "publish_on": "2026-11-17"
+  },
+  {
+    "slug": "machines-vs-free-weights",
+    "title": "Machines vs. Free Weights for Beginners",
+    "description": "How beginners can use both machines and free weights effectively.",
+    "category": "Training",
+    "body_html": "<p>Machines and free weights are both useful tools. Machines can make certain movements easy to learn, while free weights can help develop coordination and technique.</p><h2>Use the tool that fits the goal</h2><p>You do not need to choose one side forever.</p>",
+    "publish_on": "2026-11-20"
+  },
+  {
+    "slug": "track-workouts",
+    "title": "The Easiest Way to Track Your Workouts",
+    "description": "A minimal workout log that helps students see progress.",
+    "category": "Training",
+    "body_html": "<p>Use a notes app or small notebook. Write the exercise, weight, reps, and one short note if needed.</p><h2>Keep it fast</h2><p>If tracking takes too long, you are less likely to keep doing it. A 20-second log after each exercise is enough.</p>",
+    "publish_on": "2026-11-23"
+  },
+  {
+    "slug": "college-stress-training",
+    "title": "How to Train During a Stressful School Week",
+    "description": "Ways to keep lifting consistent when classes get busy.",
+    "category": "Recovery",
+    "body_html": "<p>Busy weeks are a good time to simplify. Keep the main lifts, reduce extra sets if needed, and focus on sleep and meals.</p><h2>Protect the habit</h2><p>A shorter workout you complete is better than skipping all week because the ideal session is impossible.</p>",
+    "publish_on": "2026-11-26"
+  },
+  {
+    "slug": "easy-protein-lunches",
+    "title": "6 Easy High-Protein Lunches for Students",
+    "description": "Simple lunch ideas that can work around classes.",
+    "category": "Nutrition",
+    "body_html": "<p>Try chicken and rice bowls, turkey sandwiches with milk, tuna wraps, Greek yogurt with a bagel and fruit, burrito bowls, or leftovers from dinner.</p><h2>Pack the night before</h2><p>Making lunch before bed removes one decision from a rushed morning.</p>",
+    "publish_on": "2026-11-29"
   }
 ]
