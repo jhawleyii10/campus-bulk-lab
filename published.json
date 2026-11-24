@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "slug": "track-workouts",
+    "title": "The Easiest Way to Track Your Workouts",
+    "description": "A minimal workout log that helps students see progress.",
+    "category": "Training",
+    "body_html": "<p>Use a notes app or small notebook. Write the exercise, weight, reps, and one short note if needed.</p><h2>Keep it fast</h2><p>If tracking takes too long, you are less likely to keep doing it. A 20-second log after each exercise is enough.</p>",
+    "publish_on": "2026-11-23"
+  }
+]
